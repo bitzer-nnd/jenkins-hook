@@ -1,0 +1,11 @@
+pipeline {
+    agent { label 'Windows' }
+
+    stages {
+        stage('Test Windows Host Machine') {
+            steps {
+                bat 'C:\\Jenkins\\hello.bat'
+            }
+        }
+    }
+}
